@@ -153,5 +153,36 @@
         });
       });
     </script>
+    <script>
+      const scrollDepthMilestones = {};
+      
+      document.addEventListener("scroll", function() {
+        const scrollPercent = Math.round((window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100);
+        
+        [25, 50, 75, 100].forEach(function(milestone) {
+          if (scrollPercent >= milestone && !scrollDepthMilestones[milestone]) {
+            scrollDepthMilestones[milestone] = true;
+            posthog.capture("scroll_depth", { depth: milestone });
+          }
+        });
+      }, { passive: true });
+    </script>
+    <script>
+      const sectionViewed = {};
+      
+      const sectionObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          const sectionId = entry.target.id;
+          if (entry.isIntersecting && sectionId && !sectionViewed[sectionId]) {
+            sectionViewed[sectionId] = true;
+            posthog.capture("section_viewed", { section_id: sectionId });
+          }
+        });
+      }, { threshold: 0.1 });
+      
+      document.querySelectorAll("section[id]").forEach(function(section) {
+        sectionObserver.observe(section);
+      });
+    </script>
   </body>
 </html>
