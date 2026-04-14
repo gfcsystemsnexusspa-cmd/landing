@@ -3,51 +3,168 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+
     <title>Software a medida para empresas en Chile | GFC SYSTEMS LABS</title>
+
     <meta
       name="description"
       content="Desarrollamos software a medida para empresas en Chile: automatización, dashboards, sistemas internos, SaaS y soluciones con IA."
     />
-    <link rel="canonical" href="https://gfcsystemslabs.cl/software-a-medida-chile" />
-    <meta name="robots" content="index, follow" />
 
     <link
-      href="/static/css/main.c5783c9f.css"
+      rel="canonical"
+      href="https://gfcsystemslabs.cl/software-a-medida-chile"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: #050505;
+        color: #ffffff;
+        font-family: "Outfit", sans-serif;
+        line-height: 1.6;
+      }
+
+      .hero {
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 110px 32px;
+      }
+
+      .eyebrow {
+        color: #8b8b8b;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        font-size: 13px;
+        margin-bottom: 18px;
+      }
+
+      h1 {
+        font-size: clamp(42px, 6vw, 72px);
+        line-height: 1.05;
+        margin: 0 0 24px;
+        max-width: 900px;
+      }
+
+      .subtitle {
+        font-size: 22px;
+        max-width: 780px;
+        color: #d6d6d6;
+        margin-bottom: 70px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 28px;
+      }
+
+      .card {
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 20px;
+        padding: 28px;
+        background: rgba(255, 255, 255, 0.02);
+      }
+
+      h2 {
+        font-size: 24px;
+        margin: 0 0 14px;
+      }
+
+      p {
+        color: #cfcfcf;
+        margin: 0;
+      }
+
+      .cta {
+        margin-top: 60px;
+      }
+
+      .button {
+        display: inline-block;
+        background: #ffffff;
+        color: #000000;
+        padding: 16px 26px;
+        border-radius: 999px;
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      @media (max-width: 900px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+
+        .hero {
+          padding: 80px 24px;
+        }
+      }
+    </style>
   </head>
   <body>
-    <div style="padding:40px; max-width:1100px; margin:0 auto;">
+    <section class="hero">
+      <div class="eyebrow">GFC SYSTEMS LABS · Chile</div>
+
       <h1>Software a medida para empresas en Chile</h1>
 
-      <p>
+      <p class="subtitle">
         Diseñamos software empresarial escalable, automatización con IA,
-        dashboards ejecutivos y venture systems para compañías que necesitan crecer.
+        dashboards ejecutivos y venture systems para compañías que necesitan
+        crecer con infraestructura digital real.
       </p>
 
-      <h2>Sistemas lentos, procesos manuales y herramientas desconectadas</h2>
-      <p>
-        Transformamos procesos manuales en infraestructura digital escalable.
-      </p>
+      <div class="grid">
+        <div class="card">
+          <h2>Automatización y eficiencia operativa</h2>
+          <p>
+            Transformamos procesos manuales en sistemas conectados que reducen
+            tiempos, errores y dependencia operacional.
+          </p>
+        </div>
 
-      <h2>Desarrollamos software empresarial automatizado e integrado con IA</h2>
-      <p>
-        SaaS interno, dashboards, plataformas operativas y automatización avanzada.
-      </p>
+        <div class="card">
+          <h2>Dashboards, SaaS interno y analytics</h2>
+          <p>
+            Diseñamos plataformas internas, sistemas de reporting y productos
+            digitales adaptados a tus flujos reales.
+          </p>
+        </div>
 
-      <h2>Casos de uso: dashboards, automatización, SaaS interno y venture systems</h2>
-      <p>
-        Soluciones para operaciones, ventas, analytics y productos internos.
-      </p>
+        <div class="card">
+          <h2>Integración con IA aplicada al negocio</h2>
+          <p>
+            Automatizamos ventas, soporte, operaciones y decisiones con IA útil
+            y conectada a tus sistemas.
+          </p>
+        </div>
 
-      <h2>Agenda una sesión estratégica de 20 minutos</h2>
-      <p>
-        <a href="https://gfcsystemslabs.cl/">
-          Ir al sitio principal
+        <div class="card">
+          <h2>Arquitectura venture-ready</h2>
+          <p>
+            Ideal para empresas que buscan construir activos digitales propios y
+            sistemas escalables de largo plazo.
+          </p>
+        </div>
+      </div>
+
+      <div class="cta">
+        <a class="button" href="https://gfcsystemslabs.cl/">
+          Agendar sesión estratégica
         </a>
-      </p>
-    </div>
-
-    <script defer src="/static/js/main.a6ff5a86.js"></script>
+      </div>
+    </section>
   </body>
 </html>
