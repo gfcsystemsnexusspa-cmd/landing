@@ -21367,6 +21367,7 @@
                     children: [
                       (0, w.jsxs)("a", {
                         href: x,
+                        id: "cta-hero-agenda",
                         target: "_blank",
                         rel: "noopener noreferrer",
                         "data-testid": "hero-cta-primary",
@@ -26382,6 +26383,7 @@
                     }),
                     (0, w.jsxs)("a", {
                       href: x,
+                      id: "cta-final-agenda",
                       target: "_blank",
                       rel: "noopener noreferrer",
                       "data-testid": "final-cta-button",

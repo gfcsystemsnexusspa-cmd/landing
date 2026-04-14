@@ -60,7 +60,7 @@
       href="/static/css/main.c5783c9f.css"
       rel="stylesheet"
       media="print"
-      onload="this.media='all'"
+      onload="this.media = 'all'"
     />
     <noscript>
       <link href="/static/css/main.c5783c9f.css" rel="stylesheet" />
@@ -85,7 +85,7 @@
             e.preventDefault();
           }
         },
-        true
+        true,
       );
     </script>
 
@@ -98,33 +98,30 @@
           (e.init = function (i, s, a) {
             function p(t, e) {
               var o = e.split(".");
-              2 == o.length && ((t = t[o[0]]), (e = o[1])),
+              (2 == o.length && ((t = t[o[0]]), (e = o[1])),
                 (t[e] = function () {
                   t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
-                });
+                }));
             }
-            ((n = t.createElement("script")).type = "text/javascript"),
+            (((n = t.createElement("script")).type = "text/javascript"),
               (n.crossOrigin = "anonymous"),
               (n.async = !0),
               (n.src =
-                s.api_host.replace(
-                  ".i.posthog.com",
-                  "-assets.i.posthog.com"
-                ) + "/static/array.js"),
+                s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") +
+                "/static/array.js"),
               (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(
                 n,
-                r
-              );
+                r,
+              ));
             var c = e;
             for (
               void 0 !== a ? (c = e[a] = []) : (a = "posthog"),
                 c.people = c.people || [],
                 o =
                   "capture identify alias people.set people.set_once register register_once unregister opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing reset isFeatureEnabled onFeatureFlags".split(
-                    " "
+                    " ",
                   );
               o.length;
-
             )
               p(c, o.pop());
             e._i.push([i, s, a]);
@@ -139,6 +136,21 @@
           recordCrossOriginIframes: true,
           capturePerformance: false,
         },
+      });
+    </script>
+    <script>
+      document.addEventListener("click", function (e) {
+        const target = e.target.closest("a, button");
+        if (!target) return;
+
+        const id = target.id;
+        if (!id) return;
+
+        posthog.capture("cta_clicked", {
+          cta_id: id,
+          page: window.location.pathname,
+          section: target.closest("section")?.id || "unknown",
+        });
       });
     </script>
   </body>
