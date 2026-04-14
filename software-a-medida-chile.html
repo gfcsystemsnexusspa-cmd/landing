@@ -19,152 +19,212 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Manrope:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
+    <link
+      href="static/css/main.c5783c9f.css"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link href="static/css/main.c5783c9f.css" rel="stylesheet" />
+    </noscript>
+
     <style>
-      * {
-        box-sizing: border-box;
-      }
-
       body {
-        margin: 0;
+        min-height: 100vh;
         background: #050505;
-        color: #ffffff;
-        font-family: "Outfit", sans-serif;
-        line-height: 1.6;
-      }
-
-      .hero {
-        max-width: 1180px;
-        margin: 0 auto;
-        padding: 110px 32px;
-      }
-
-      .eyebrow {
-        color: #8b8b8b;
-        text-transform: uppercase;
-        letter-spacing: 0.12em;
-        font-size: 13px;
-        margin-bottom: 18px;
-      }
-
-      h1 {
-        font-size: clamp(42px, 6vw, 72px);
-        line-height: 1.05;
-        margin: 0 0 24px;
-        max-width: 900px;
-      }
-
-      .subtitle {
-        font-size: 22px;
-        max-width: 780px;
-        color: #d6d6d6;
-        margin-bottom: 70px;
-      }
-
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 28px;
-      }
-
-      .card {
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        border-radius: 20px;
-        padding: 28px;
-        background: rgba(255, 255, 255, 0.02);
-      }
-
-      h2 {
-        font-size: 24px;
-        margin: 0 0 14px;
-      }
-
-      p {
-        color: #cfcfcf;
-        margin: 0;
-      }
-
-      .cta {
-        margin-top: 60px;
-      }
-
-      .button {
-        display: inline-block;
-        background: #ffffff;
-        color: #000000;
-        padding: 16px 26px;
-        border-radius: 999px;
-        text-decoration: none;
-        font-weight: 700;
-      }
-
-      @media (max-width: 900px) {
-        .grid {
-          grid-template-columns: 1fr;
-        }
-
-        .hero {
-          padding: 80px 24px;
-        }
       }
     </style>
   </head>
-  <body>
-    <section class="hero">
-      <div class="eyebrow">GFC SYSTEMS LABS · Chile</div>
-
-      <h1>Software a medida para empresas en Chile</h1>
-
-      <p class="subtitle">
-        Diseñamos software empresarial escalable, automatización con IA,
-        dashboards ejecutivos y venture systems para compañías que necesitan
-        crecer con infraestructura digital real.
-      </p>
-
-      <div class="grid">
-        <div class="card">
-          <h2>Automatización y eficiencia operativa</h2>
-          <p>
-            Transformamos procesos manuales en sistemas conectados que reducen
-            tiempos, errores y dependencia operacional.
-          </p>
-        </div>
-
-        <div class="card">
-          <h2>Dashboards, SaaS interno y analytics</h2>
-          <p>
-            Diseñamos plataformas internas, sistemas de reporting y productos
-            digitales adaptados a tus flujos reales.
-          </p>
-        </div>
-
-        <div class="card">
-          <h2>Integración con IA aplicada al negocio</h2>
-          <p>
-            Automatizamos ventas, soporte, operaciones y decisiones con IA útil
-            y conectada a tus sistemas.
-          </p>
-        </div>
-
-        <div class="card">
-          <h2>Arquitectura venture-ready</h2>
-          <p>
-            Ideal para empresas que buscan construir activos digitales propios y
-            sistemas escalables de largo plazo.
-          </p>
-        </div>
-      </div>
-
-      <div class="cta">
-        <a class="button" href="https://gfcsystemslabs.cl/">
-          Agendar sesión estratégica
+  <body class="bg-[#050505] text-white antialiased">
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-[#050505]/80 backdrop-blur-xl border-b border-white/10">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between h-16 md:h-20">
+        <a href="/" class="font-['Outfit'] font-bold text-lg md:text-xl tracking-tight text-white">
+          GFC <span class="text-[#6D5DFB]">SYSTEMS</span> LABS
         </a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="#capacidades" class="text-sm text-[#A1A1AA] hover:text-white transition-colors duration-200 font-medium">
+            Capacidades
+          </a>
+          <a href="#" class="text-sm text-[#A1A1AA] hover:text-white transition-colors duration-200 font-medium">
+            Proceso
+          </a>
+          <a href="#" class="text-sm text-[#A1A1AA] hover:text-white transition-colors duration-200 font-medium">
+            Ecosistema
+          </a>
+          <a href="https://gfcsystemslabs.cl/" class="bg-[#6D5DFB] text-white text-sm font-medium rounded-full px-6 py-2.5 hover:bg-[#5a4ae2] transition-all duration-200 shadow-[0_0_20px_rgba(109,93,251,0.3)] hover:shadow-[0_0_30px_rgba(109,93,251,0.5)]">
+            Agendar sesión
+          </a>
+        </div>
       </div>
-    </section>
+    </nav>
+
+    <main class="pt-24 md:pt-28">
+      <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[700px] bg-[radial-gradient(ellipse_at_center,rgba(109,93,251,0.18)_0%,transparent_72%)] pointer-events-none"></div>
+        <div class="absolute top-1/4 right-0 w-[420px] h-[420px] bg-[radial-gradient(circle,rgba(109,93,251,0.1)_0%,transparent_70%)] pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 w-[360px] h-[360px] bg-[radial-gradient(circle,rgba(255,255,255,0.05)_0%,transparent_75%)] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center relative z-10">
+          <p class="uppercase tracking-[0.2em] text-xs md:text-sm text-[#6D5DFB] font-medium mb-6">
+            GFC SYSTEMS LABS · Chile
+          </p>
+
+          <h1 class="font-['Outfit'] text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tighter leading-[1.05] text-white max-w-5xl mx-auto">
+            Software a medida para empresas en Chile
+          </h1>
+
+          <p class="mt-6 md:mt-8 text-base md:text-lg text-[#A1A1AA] max-w-2xl mx-auto leading-relaxed">
+            Diseñamos software empresarial escalable, automatización con IA,
+            dashboards ejecutivos y venture systems para compañías que necesitan
+            crecer con infraestructura digital real.
+          </p>
+
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10 md:mt-12">
+            <a
+              href="https://gfcsystemslabs.cl/"
+              class="inline-flex items-center gap-2 bg-[#6D5DFB] text-white font-medium rounded-full px-8 py-3.5 hover:bg-[#5a4ae2] transition-all duration-300 shadow-[0_0_24px_rgba(109,93,251,0.35)] hover:shadow-[0_0_40px_rgba(109,93,251,0.55)] text-sm md:text-base"
+            >
+              Agendar sesión estratégica
+            </a>
+            <a
+              href="#capacidades"
+              class="inline-flex items-center gap-2 bg-transparent text-white border border-white/20 hover:border-white/40 hover:bg-white/5 transition-all duration-300 rounded-full px-8 py-3.5 font-medium text-sm md:text-base"
+            >
+              Explorar capacidades
+            </a>
+          </div>
+
+          <p class="mt-12 md:mt-16 text-xs md:text-sm text-[#A1A1AA]/70 max-w-xl mx-auto">
+            Diseñado para startups, ventures y empresas que necesitan infraestructura digital escalable.
+          </p>
+        </div>
+      </section>
+
+      <section id="capacidades" class="py-24 sm:py-32">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+          <div class="max-w-2xl">
+            <p class="uppercase tracking-[0.2em] text-xs text-[#6D5DFB] font-medium mb-4">
+              Capacidades
+            </p>
+            <h2 class="font-['Outfit'] text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight text-white">
+              Soluciones completas para cada desafío digital
+            </h2>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-14">
+            <div class="group bg-white/[0.02] backdrop-blur-xl border border-white/[0.08] hover:border-[#6D5DFB]/40 transition-all duration-300 rounded-2xl p-8 relative overflow-hidden hover:-translate-y-1">
+              <div class="absolute inset-0 bg-gradient-to-br from-[#6D5DFB]/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="relative z-10">
+                <div class="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-[#6D5DFB]/[0.12] text-[#6D5DFB] mb-5">
+                  <svg viewBox="0 0 24 24" class="w-6 h-6" fill="currentColor" aria-hidden="true">
+                    <path d="M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2zm3 6h2v6H8V9zm4 2h2v4h-2v-4zm4-2h2v6h-2V9z" />
+                  </svg>
+                </div>
+                <h2 class="font-['Outfit'] text-lg font-semibold text-white mb-3">Automatización y eficiencia operativa</h2>
+                <p class="text-sm text-[#A1A1AA] leading-relaxed">
+                  Transformamos procesos manuales en sistemas conectados que reducen
+                  tiempos, errores y dependencia operacional.
+                </p>
+              </div>
+            </div>
+
+            <div class="group bg-white/[0.02] backdrop-blur-xl border border-white/[0.08] hover:border-[#6D5DFB]/40 transition-all duration-300 rounded-2xl p-8 relative overflow-hidden hover:-translate-y-1">
+              <div class="absolute inset-0 bg-gradient-to-br from-[#6D5DFB]/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="relative z-10">
+                <div class="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-[#6D5DFB]/[0.12] text-[#6D5DFB] mb-5">
+                  <svg viewBox="0 0 24 24" class="w-6 h-6" fill="currentColor" aria-hidden="true">
+                    <path d="M4 19h16v2H4zm2-6h6v6H6zm8-8h6v14h-6z" />
+                  </svg>
+                </div>
+                <h2 class="font-['Outfit'] text-lg font-semibold text-white mb-3">Dashboards, SaaS interno y analytics</h2>
+                <p class="text-sm text-[#A1A1AA] leading-relaxed">
+                  Diseñamos plataformas internas, sistemas de reporting y productos
+                  digitales adaptados a tus flujos reales.
+                </p>
+              </div>
+            </div>
+
+            <div class="group bg-white/[0.02] backdrop-blur-xl border border-white/[0.08] hover:border-[#6D5DFB]/40 transition-all duration-300 rounded-2xl p-8 relative overflow-hidden hover:-translate-y-1">
+              <div class="absolute inset-0 bg-gradient-to-br from-[#6D5DFB]/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="relative z-10">
+                <div class="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-[#6D5DFB]/[0.12] text-[#6D5DFB] mb-5">
+                  <svg viewBox="0 0 24 24" class="w-6 h-6" fill="currentColor" aria-hidden="true">
+                    <path d="M12 2l3 7h7l-5.7 4.2 2.2 7L12 16l-6.5 4.2 2.2-7L2 9h7z" />
+                  </svg>
+                </div>
+                <h2 class="font-['Outfit'] text-lg font-semibold text-white mb-3">Integración con IA aplicada al negocio</h2>
+                <p class="text-sm text-[#A1A1AA] leading-relaxed">
+                  Automatizamos ventas, soporte, operaciones y decisiones con IA útil
+                  y conectada a tus sistemas.
+                </p>
+              </div>
+            </div>
+
+            <div class="group bg-white/[0.02] backdrop-blur-xl border border-white/[0.08] hover:border-[#6D5DFB]/40 transition-all duration-300 rounded-2xl p-8 relative overflow-hidden hover:-translate-y-1">
+              <div class="absolute inset-0 bg-gradient-to-br from-[#6D5DFB]/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div class="relative z-10">
+                <div class="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-[#6D5DFB]/[0.12] text-[#6D5DFB] mb-5">
+                  <svg viewBox="0 0 24 24" class="w-6 h-6" fill="currentColor" aria-hidden="true">
+                    <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.93V18h-2v-1.07A8.001 8.001 0 014.07 13H5v-2H4.07A8.001 8.001 0 0111 4.07V5h2v-.93A8.001 8.001 0 0119.93 11H19v2h.93A8.001 8.001 0 0113 16.93z" />
+                  </svg>
+                </div>
+                <h2 class="font-['Outfit'] text-lg font-semibold text-white mb-3">Arquitectura venture-ready</h2>
+                <p class="text-sm text-[#A1A1AA] leading-relaxed">
+                  Ideal para empresas que buscan construir activos digitales propios y
+                  sistemas escalables de largo plazo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-white/[0.06] py-12 md:py-16">
+      <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+          <div>
+            <p class="font-['Outfit'] font-bold text-lg tracking-tight text-white mb-2">
+              GFC <span class="text-[#6D5DFB]">SYSTEMS</span> LABS
+            </p>
+            <p class="text-sm text-[#A1A1AA]">
+              Marca operada por GFC Systems Nexus SpA
+            </p>
+            <div class="flex items-center gap-1.5 mt-2 text-[#A1A1AA]/60 text-xs">
+              <svg viewBox="0 0 256 256" class="w-3.5 h-3.5" fill="currentColor" aria-hidden="true">
+                <path opacity="0.2" d="M128,24a80,80,0,0,0-80,80c0,72,80,128,80,128s80-56,80-128A80,80,0,0,0,128,24Zm0,112a32,32,0,1,1,32-32A32,32,0,0,1,128,136Z" />
+                <path d="M128,64a40,40,0,1,0,40,40A40,40,0,0,0,128,64Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,128Zm0-112a88.1,88.1,0,0,0-88,88c0,31.4,14.51,64.68,42,96.25a254.19,254.19,0,0,0,41.45,38.3,8,8,0,0,0,9.18,0A254.19,254.19,0,0,0,174,200.25c27.45-31.57,42-64.85,42-96.25A88.1,88.1,0,0,0,128,16Zm0,206c-16.53-13-72-60.75-72-118a72,72,0,0,1,144,0C200,161.23,144.53,209,128,222Z" />
+              </svg>
+              <span>Chile · LATAM</span>
+            </div>
+          </div>
+          <div class="flex flex-col md:items-end gap-2">
+            <div class="flex items-center gap-6 text-sm text-[#A1A1AA]">
+              <a href="#capacidades" class="hover:text-white transition-colors">
+                Capacidades
+              </a>
+              <a href="#" class="hover:text-white transition-colors">
+                Proceso
+              </a>
+              <a href="#" class="hover:text-white transition-colors">
+                Ecosistema
+              </a>
+              <a href="#" class="hover:text-white transition-colors">
+                FAQ
+              </a>
+            </div>
+            <p class="text-xs text-[#A1A1AA]/40 mt-2">
+              © 2026 GFC Systems Nexus SpA. Todos los derechos reservados.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -21946,7 +21946,37 @@
                       hs,
                       {
                         delay: 0.08 * t,
-                        children: (0, w.jsxs)("div", {
+                        children: e.title === "Ingeniería de software" ? (0, w.jsx)("a", { href: "/software-a-medida-chile.html", style: { display: "block", textDecoration: "none", color: "inherit" }, children: (0, w.jsxs)("div", {
+                          "data-testid": "capability-card-".concat(t),
+                          className:
+                            "group bg-white/[0.02] backdrop-blur-xl border border-white/[0.08] hover:border-[#6D5DFB]/40 transition-all duration-300 rounded-2xl p-8 relative overflow-hidden hover:-translate-y-1",
+                          children: [
+                            (0, w.jsx)("div", {
+                              className:
+                                "absolute inset-0 bg-gradient-to-br from-[#6D5DFB]/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300",
+                            }),
+                            (0, w.jsxs)("div", {
+                              className: "relative z-10",
+                              children: [
+                                (0, w.jsx)(e.icon, {
+                                  size: 32,
+                                  weight: "duotone",
+                                  className: "text-[#6D5DFB] mb-5",
+                                }),
+                                (0, w.jsx)("h3", {
+                                  className:
+                                    "font-['Outfit'] text-lg font-semibold text-white mb-3",
+                                  children: e.title,
+                                }),
+                                (0, w.jsx)("p", {
+                                  className:
+                                    "text-sm text-[#A1A1AA] leading-relaxed",
+                                  children: e.description,
+                                }),
+                              ],
+                            }),
+                          ],
+                        }) }) : (0, w.jsxs)("div", {
                           "data-testid": "capability-card-".concat(t),
                           className:
                             "group bg-white/[0.02] backdrop-blur-xl border border-white/[0.08] hover:border-[#6D5DFB]/40 transition-all duration-300 rounded-2xl p-8 relative overflow-hidden hover:-translate-y-1",
